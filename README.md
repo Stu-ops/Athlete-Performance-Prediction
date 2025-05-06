@@ -3,63 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Athlete Performance Prediction</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 2rem auto;
-      max-width: 800px;
-      padding: 0 1rem;
-      color: #333;
-    }
-    h1, h2, h3 {
-      font-weight: 600;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    h3 {
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin-bottom: 1rem;
-    }
-    code, pre {
-      background: #f6f8fa;
-      border-radius: 3px;
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-      font-size: 0.9em;
-    }
-    pre {
-      padding: 1rem;
-      overflow-x: auto;
-    }
-    ul, ol {
-      margin-left: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    .badge {
-      display: inline-block;
-      padding: .25em .6em;
-      font-size: 75%;
-      font-weight: 700;
-      line-height: 1;
-      color: #fff;
-      background-color: #0366d6;
-      border-radius: .25rem;
-      vertical-align: middle;
-      margin-right: .3em;
-    }
-  </style>
 </head>
 <body>
 
