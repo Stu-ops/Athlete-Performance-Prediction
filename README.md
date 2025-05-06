@@ -1,111 +1,143 @@
-🏅 Athlete Performance Prediction
-Predict athletic performance using biometric and training metrics with the power of machine learning.​
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Athlete Performance Prediction</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      color: #333;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    code, pre {
+      background: #f6f8fa;
+      border-radius: 3px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: .25em .6em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+      background-color: #0366d6;
+      border-radius: .25rem;
+      vertical-align: middle;
+      margin-right: .3em;
+    }
+  </style>
+</head>
+<body>
 
-📌 Project Overview
-This project utilizes a dataset of athlete metrics (e.g., heart rate, stamina, training hours) to predict performance levels. It offers a streamlined pipeline—from data processing to model prediction—and a user-friendly web interface powered by Streamlit.​
+  <h1>🏅 Athlete Performance Prediction</h1>
+  <p>Predict athletic performance using biometric and training metrics with the power of machine learning.</p>
 
-🚀 Features
-📊 Exploratory Data Analysis (EDA)
+  <h2>📌 Project Overview</h2>
+  <p>This project utilizes a dataset of athlete metrics (e.g., heart rate, stamina, training hours) to predict performance levels. It offers a streamlined pipeline—from data processing to model prediction—and a user-friendly web interface powered by Streamlit.</p>
 
-🧠 Model Training using scikit-learn
+  <h2>🚀 Features</h2>
+  <ul>
+    <li><span class="badge">📊</span> <strong>Exploratory Data Analysis (EDA)</strong></li>
+    <li><span class="badge">🧠</span> <strong>Model Training</strong> using scikit-learn</li>
+    <li><span class="badge">💾</span> <strong>Pipeline Serialization</strong> (<code>pipe.pkl</code>)</li>
+    <li><span class="badge">🌐</span> <strong>Streamlit UI</strong> (<code>app.py</code>) for real‑time predictions</li>
+    <li><span class="badge">📈</span> <strong>Visualizations and insights</strong> included in Jupyter Notebooks</li>
+  </ul>
 
-💾 Pipeline Serialization (pipe.pkl)
+  <h2>🗂️ Project Structure</h2>
+  <pre><code>Athlete-Performance-Prediction/
+├── <code>app.py</code>                      # Streamlit application
+├── <code>pipe.pkl</code>                    # Serialized machine learning pipeline
+├── <code>train.csv</code>                   # Training dataset
+├── <code>requirements.txt</code>            # Project dependencies
+├── <code>Athlete-Performance-Prediction.ipynb</code> # Main notebook for data exploration & model training
+├── <code>Athlete_performance_prediction.ipynb</code> # Alternate/preliminary notebook
+└── <code>README.md</code>                   # Project documentation
+</code></pre>
 
-🌐 Streamlit UI (app.py) for real-time predictions
+  <h2>🧪 Tech Stack</h2>
+  <ul>
+    <li>Python</li>
+    <li>Pandas, NumPy</li>
+    <li>scikit-learn</li>
+    <li>Streamlit</li>
+    <li>Jupyter Notebook</li>
+    <li>Matplotlib / Seaborn</li>
+  </ul>
 
-📈 Visualizations and insights included in Jupyter Notebooks​
-GitHub
-+1
-GitHub
-+1
-
-🗂️ Project Structure
-bash
-Copy
-Edit
-Athlete-Performance-Prediction/
-├── app.py                             # Streamlit application
-├── pipe.pkl                           # Serialized machine learning pipeline
-├── train.csv                          # Training dataset
-├── requirements.txt                   # Project dependencies
-├── Athlete-Performance-Prediction.ipynb  # Main notebook for data exploration & model training
-├── Athlete_performance_prediction.ipynb  # Alternate/preliminary notebook
-└── README.md                          # Project documentation
-🧪 Tech Stack
-Python
-
-Pandas, NumPy
-
-scikit-learn
-
-Streamlit
-
-Jupyter Notebook
-
-Matplotlib / Seaborn​
-GitHub
-+6
-GitHub
-+6
-GitHub
-+6
-
-📦 Setup Instructions
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/Stu-ops/Athlete-Performance-Prediction.git
+  <h2>📦 Setup Instructions</h2>
+  <ol>
+    <li><strong>Clone the repository</strong>
+      <pre><code>git clone https://github.com/Stu-ops/Athlete-Performance-Prediction.git
 cd Athlete-Performance-Prediction
-2. Create a virtual environment (optional but recommended)
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate   # On Windows use: venv\Scripts\activate
-3. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4. Run the Streamlit app
-bash
-Copy
-Edit
-streamlit run app.py
-🔍 Model Details
-Features Used: heart_rate, stamina, training_hours, and other biometric stats.
+</code></pre>
+    </li>
+    <li><strong>Create a virtual environment</strong> (optional but recommended)
+      <pre><code>python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+</code></pre>
+    </li>
+    <li><strong>Install dependencies</strong>
+      <pre><code>pip install -r requirements.txt
+</code></pre>
+    </li>
+    <li><strong>Run the Streamlit app</strong>
+      <pre><code>streamlit run app.py
+</code></pre>
+    </li>
+  </ol>
 
-Target: Athlete performance label (presumably categorical or numeric rating).
+  <h2>🔍 Model Details</h2>
+  <ul>
+    <li><strong>Features Used:</strong> heart_rate, stamina, training_hours, and other biometric stats.</li>
+    <li><strong>Target:</strong> Athlete performance label (categorical or numeric rating).</li>
+    <li><strong>Model:</strong> Regression or classification model trained using scikit-learn.</li>
+    <li><strong>Pipeline:</strong> Serialized using joblib and saved as <code>pipe.pkl</code> for reuse in the Streamlit app.</li>
+  </ul>
 
-Model: Likely a regression or classification model trained using scikit-learn.
+  <h2>📈 Example Use Case</h2>
+  <p>A sports analyst inputs athlete metrics into the UI and receives an instant prediction of their performance potential. This tool can assist in:</p>
+  <ul>
+    <li>Training optimization</li>
+    <li>Talent scouting</li>
+    <li>Injury prevention analytics</li>
+  </ul>
 
-Pipeline: Serialized using joblib and saved as pipe.pkl for reuse in the Streamlit app.​
-GitHub
-+5
-GitHub
-+5
-GitHub
-+5
-
-📈 Example Use Case
-A sports analyst inputs athlete metrics into the UI and receives an instant prediction of their performance potential. This tool can assist in:​
-
-Training optimization
-
-Talent scouting
-
-Injury prevention analytics​
-GitHub
-
-🤝 Contributing
-Contributions are welcome! Feel free to fork the repository, raise issues, or submit pull requests. Let's collaborate to enhance this project further.​
-GitHub
-
-📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.​
-
-🙋‍♀️ Questions?
-If you have any questions or need assistance, please open an issue, and we'll get back to you promptly!​
-
-Would you like assistance in creating a project logo or banner to further enhance your repository's appearance?
+  <hr/>
+  <p style="font-size:0.9em; color:#666;">Generated on May 6, 2025</p>
+</body>
+</html>
